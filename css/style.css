@@ -523,3 +523,157 @@
 .gallery-item img:hover {
     transform: scale(1.1);
 }
+
+/**************************/
+/*  TESTIMONIALS SECTION  */
+/**************************/
+
+.section-pricing {
+    padding: 9.6rem 0;
+}
+
+.plans-pricing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.8rem;
+    border-radius: 12px;
+    width: 75%;
+    content: center;
+    margin: 0 auto;
+}
+
+.plan-header-left {
+    border: 1px solid #fcd2aa77;
+    padding: 4.8rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.plan-header-right {
+    background-color: #fdf2e9;
+    padding: 4.8rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.plan-header-right::after {
+    content: "Best value";
+    position: absolute;
+    top: 6%;
+    right: -18%;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    background-color: #ffd43b;
+    padding: 0.8rem 8rem;
+    transform: rotate(45deg);
+}
+
+.btn-pricing {
+    display: inline-block;
+    background-color: #e67e22;
+    color: #fff;
+
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+
+    padding: 1.6rem 3.2rem;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+}
+
+.btn-pricing:hover {
+    background-color: #cf711f;
+}
+
+.btn-pricing:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-details {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.plan-header {
+    text-align: center;
+    margin-bottom: 4.8rem;
+}
+
+.plan-name {
+    color: #cf711f;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75;
+    margin-bottom: 3.2rem;
+}
+
+.plan-price {
+    font-size: 6.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-right: 0.8rem;
+}
+
+.plan-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #6f6f6f;
+}
+
+.plan-sing-up {
+    text-align: center;
+    margin-top: 4.8rem;
+}
+
+.plan-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 6.4rem;
+    gap: 3.2rem;
+    margin: 8rem auto 0;
+    max-width: 120rem;
+    content: center;
+}
+
+.feature-icon {
+    display: block;
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: 1.6rem;
+    margin-bottom: 3.2rem;
+    color: #e67e22;
+    background-color: #fdf2e9;
+    border-radius: 50%;
+}
+
+.feature-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+    color: #333;
+}
+
+.feature-text {
+    margin: 0;
+    color: #555;
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
