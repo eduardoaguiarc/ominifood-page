@@ -677,3 +677,221 @@
     font-size: 1.8rem;
     line-height: 1.8;
 }
+
+@media (max-width: 900px) {
+    .plan-features {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 4.8rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .plan-features {
+        grid-template-columns: 1fr;
+    }
+}
+
+/**************************/
+/*       CTA SECTION      */
+/**************************/
+
+.section-cta {
+    padding: 4.8rem 0 12.8rem;
+}
+
+.container-cta {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #fa913c;
+    border-radius: 11px;
+    overflow: hidden;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    }
+
+    50% {
+        transform: translateY(-1rem);
+        box-shadow: 0 3.2rem 5.6rem rgba(0, 0, 0, 0.2);
+    }
+}
+
+.cta-content {
+    padding: 4.8rem 6.4rem 6.4rem;
+}
+
+.cta-title .heading-secondary {
+    color: #45260a;
+    margin-bottom: 3.2rem;
+}
+
+.cta-text {
+    color: #45260a;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+/* FORMULÁRIO */
+
+.cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+
+.cta-form label {
+    display: block;
+    color: #45260a;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+    width: 100%;
+    padding: 1.2rem;
+
+    font-family: inherit;
+    font-size: 1.8rem;
+
+    border: none;
+    border-radius: 9px;
+    background-color: #fdf2e9;
+}
+
+.btn--form {
+    align-self: end;
+    padding: 1.2rem;
+
+    color: #fdf2e9;
+    background-color: #45260a;
+    border: none;
+    border-radius: 9px;
+
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn--form:hover {
+    color: #555;
+    background-color: #fff;
+}
+
+/* IMAGEM */
+
+.image-woman img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/**************************/
+/*     FOOTER SECTION     */
+/**************************/
+
+.footer {
+    padding: 12.8rem 0;
+    border-top: 1px solid #eee;
+}
+
+.grid--footer {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+    column-gap: 6.4rem;
+}
+
+.footer-logo .logo {
+    display: block;
+    width: auto;
+    height: 2.2rem;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.social-links,
+.footer-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.social-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.copyright {
+    margin-top: auto;
+    color: #767676;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.footer-heading {
+    margin-bottom: 4rem;
+    color: #555;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.contacts {
+    color: #767676;
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.address {
+    margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    color: #767676;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: #555;
+}
